@@ -18,6 +18,9 @@ tabs:
                 action: show
                 field: show_projects
                 condition: checked
+            default:
+                0:
+                    name: Acme App
             form:
                 fields:
                     project_name:
