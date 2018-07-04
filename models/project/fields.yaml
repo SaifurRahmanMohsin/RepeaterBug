@@ -1,0 +1,24 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+tabs:
+    defaultTab: General
+    fields:
+        show_projects:
+            label: Show Projects?
+            type: switch
+
+        projects:
+            label: Feedback Questions
+            tab: Misc
+            type: repeater
+            prompt: Add New Project
+            trigger:
+                action: show
+                field: show_projects
+                condition: checked
+            form:
+                fields:
+                    project_name:
+                        label: Projects Name

@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Project
+
+# Model Form Field configuration
+form: $/mohsin/repeaterbug/models/project/fields.yaml
+
+# Model Class name
+modelClass: Mohsin\RepeaterBug\Models\Project
+
+# Default redirect location
+defaultRedirect: mohsin/repeaterbug/projects
+
+# Create page
+create:
+    title: Create Project
+    redirect: mohsin/repeaterbug/projects/update/:id
+    redirectClose: mohsin/repeaterbug/projects
+
+# Update page
+update:
+    title: Edit Project
+    redirect: mohsin/repeaterbug/projects
+    redirectClose: mohsin/repeaterbug/projects
+
+# Preview page
+preview:
+    title: Preview Project
