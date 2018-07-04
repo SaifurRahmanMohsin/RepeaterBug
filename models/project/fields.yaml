@@ -25,3 +25,15 @@ tabs:
                 fields:
                     project_name:
                         label: Projects Name
+
+        show_idea:
+            label: Show Idea?
+            type: switch
+
+        idea:
+            label: Idea
+            tab: Idea
+            trigger:
+                action: show
+                field: show_idea
+                condition: checked
