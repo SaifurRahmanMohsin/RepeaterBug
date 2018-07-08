@@ -12,26 +12,22 @@ class Project extends Model
      */
     public $table = 'mohsin_repeaterbug_projects';
 
-    /**
-     * @var array Guarded fields
-     */
-    protected $guarded = ['*'];
+    public function getAwesomenessAttribute($value)
+    {
+        if(is_null($value))
+            return 'Nope!';
+    }
 
-    /**
-     * @var array Fillable fields
-     */
-    protected $fillable = [];
-
-    /**
-     * @var array Relations
-     */
-    public $hasOne = [];
-    public $hasMany = [];
-    public $belongsTo = [];
-    public $belongsToMany = [];
-    public $morphTo = [];
-    public $morphOne = [];
-    public $morphMany = [];
-    public $attachOne = [];
-    public $attachMany = [];
+    public function getProjectsAttribute($value)
+    {
+        if(is_null($value))
+            return [
+                  0 => [
+                      'name' => 'Awesomness'
+                  ],
+                  1 => [
+                      'name' => 'And Attractiveness!'
+                  ]
+              ];
+    }
 }

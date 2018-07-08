@@ -5,26 +5,25 @@
 tabs:
     defaultTab: General
     fields:
-        show_projects:
-            label: Show Projects?
-            type: switch
+        awesomeness:
+            label: Awesomeness
+            default: Yeah!!
 
         projects:
             label: Feedback Questions
-            tab: Misc
             type: repeater
             prompt: Add New Project
-            trigger:
-                action: show
-                field: show_projects
-                condition: checked
             default:
                 0:
                     name: Acme App
             form:
                 fields:
-                    project_name:
+                    name:
                         label: Projects Name
+
+        show_projects:
+            label: Show Projects?
+            type: switch
 
         show_idea:
             label: Show Idea?
